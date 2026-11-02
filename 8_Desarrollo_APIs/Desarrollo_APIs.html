@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer: APIs, SQL y extensiones — Data Cloud Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../datacloud_style.css"></head>
+<body>
+<div class="back-bar"><div class="container-flex"><a class="back-link" href="../START.html">← Data Cloud Hub</a><span class="badge badge-teal">Módulo 8 · ≈5 h</span></div></div>
+<div class="container">
+<header><span class="brand-tag">Data Cloud · Data 360</span><h1>Perfil Developer: APIs, SQL y extensiones</h1><p class="subtitle">Ingestion API, Query API, Connect REST API, Query Editor, transforms con SQL, code extensions y empaquetado.</p></header>
+<div class="callout"><strong>🎯 Objetivos del módulo (según la guía oficial del examen)</strong><ul><li>Elegir la API adecuada.</li><li>Escribir SQL en Query Editor y transforms.</li><li>Conocer los límites de ejecución.</li><li>Automatizar el despliegue con data kits.</li></ul></div>
+<section class="content-section"><h2 class="section-title">🔌 8.1 Mapa de APIs</h2><table><tr><th>API / herramienta</th><th>Para qué</th><th>Fuente</th></tr><tr><td>Ingestion API (streaming y bulk)</td><td>Cargar datos desde cualquier app; el esquema se define con OpenAPI</td><td>Developer docs <span class='tag d'>DevDocs</span></td></tr><tr><td>Query API / SQL</td><td>Consultar DMO, DLO, CIO; CI paginados (hasta 4.999 filas por consulta)</td><td>Developer docs <span class='tag d'>DevDocs</span></td></tr><tr><td>Connect REST API</td><td>Acceso programático a consultas, activación de audiencias y gestión de pipelines</td><td>Glosario <span class='tag g'>Glosario</span></td></tr><tr><td>JDBC / Query Editor</td><td>SQL sobre DLO, DMO, CIO y data graphs</td><td>Glosario <span class='tag g'>Glosario</span></td></tr><tr><td>Code Extensions</td><td>Código propio para transforms batch; función ≤ 5 min, script ≤ 12 h, paquete ≤ 5 GB, logs 2 años</td><td>Help <span class='tag h'>Help</span></td></tr><tr><td>Platform Events</td><td>DataObjectDataChgEvent desde data actions</td><td>Help <span class='tag h'>Help</span></td></tr></table></section><section class="content-section"><h2 class="section-title">🧪 8.2 Ejemplos ilustrativos</h2><pre># Ingestion API (streaming) — patrón. Rutas y versión: verifica en Developer docs
+curl -X POST &quot;$DC_TENANT/api/v1/ingest/sources/&lt;source_api_name&gt;/&lt;object_name&gt;&quot; \
+  -H &quot;Authorization: Bearer $DC_TOKEN&quot; -H &quot;Content-Type: application/json&quot; \
+  -d &#x27;{&quot;data&quot;:[{&quot;id&quot;:&quot;1001&quot;,&quot;email&quot;:&quot;ana@example.com&quot;,&quot;created&quot;:&quot;2026-11-02T10:00:00Z&quot;}]}&#x27;
+# Límites: 200 KB por petición (403 si se excede) y 250 req/s en total (429)</pre><pre>-- Streaming transform ilustrativo: normalizar email al llegar
+SELECT
+  id__c,
+  LOWER(TRIM(email__c)) AS email_clean__c,
+  created__c
+FROM Customers_Stream__dll</pre><div class="callout">Los sufijos de API name son <code>__dll</code> (DLO), <code>__dlm</code> (DMO) y <code>__cio</code> (CIO) <span class='tag w'>⚠ verificar</span>.</div></section><section class="content-section"><h2 class="section-title">📦 8.3 ALM y calidad</h2><div class="topic-card"><h3>Despliegue <span class='tag h'>Help</span><span class='tag w'>⚠ verificar</span></h3><ul><li>Data kit en el data space por defecto → Package Manager → org destino.</li><li>Máx. 50 objetos por operación de guardado en un kit; transforms ligadas a data spaces no por defecto no se despliegan con kit.</li><li>Prueba en sandbox: mapeos, rulesets y segmentos con datos representativos.</li><li>Versiona OpenAPI schemas y SQL de insights/transforms en Git.</li></ul></div><h3>🧪 Autoevaluación</h3><details><summary>¿Qué código de error devuelve Ingestion API al exceder 250 req/s?</summary><p>429.</p></details><details><summary>¿Cómo creas un transform batch con lógica personalizada?</summary><p>Con Code Extensions.</p></details></section>
+<p class="src">Fuentes: Developer docs: Data 360 Integration Guide (Ingestion API, Query API); Help: glosario y límites. Los ejemplos de código son ilustrativos: confirma rutas y versiones en developer.salesforce.com/docs/data.</p>
+<div class="pager"><a href="../7_Datos_No_Estructurados_RAG/Datos_No_Estructurados_RAG.html">← Datos no estructurados, búsqueda y RAG</a><a href="../9_Implementacion_Proyectos/Implementacion_Proyectos.html">Implementación y estimación de proyectos →</a></div>
+</div></body></html>

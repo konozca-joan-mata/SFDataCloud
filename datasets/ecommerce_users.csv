@@ -1,0 +1,15 @@
+user_id,full_name,email,phone,city,signup_date
+U001,A. Garcia,ana.garcia@example.com,600111001,Barcelona,2025-02-02
+U002,Luis Martinez Lopez,luis.martinez@example.com,600111002,Madrid,2025-03-03
+U003,Marta Soler,msoler@example.org,600111003,Girona,2025-04-04
+U004,Jordi Puig,jordi.p@example.org,600111004,Lleida,2025-05-05
+U005,Carla Vidal,carla.vidal@example.com,600111005,Valencia,2025-06-06
+U006,Pau Ferrer,pau.ferrer@example.com,600111006,Tarragona,2025-07-07
+U007,Nuria Roca,nuria.roca@example.com,600111007,Barcelona,2025-08-08
+U008,David Mas,david.mas@example.com,600111008,Sevilla,2025-09-09
+U009,Laia Serra,laia.serra@example.com,600111009,Girona,2025-10-10
+U010,Marc Casals,marc.casals@example.com,600111010,Bilbao,2025-11-11
+U011,Sara Moreno,sara.moreno@example.com,600111011,Madrid,2025-12-12
+U012,Oriol Pons,oriol.pons@example.com,600111012,Barcelona,2025-01-13
+U013,Elena Navarro,elena.navarro@example.com,600111013,Zaragoza,2025-02-14
+U014,Joan Vila,joan.vila@example.com,600111014,Lleida,2025-03-15

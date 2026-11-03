@@ -35,6 +35,6 @@ Formación completa de **Salesforce Data Cloud / Data 360** para perfiles Consul
 Cada dato indica su fuente: Help, Trailhead, Glosario, Developer docs o guía del examen. Lo no verificado va marcado como «⚠ verificar». Los límites y nombres cambian con cada release: contrasta siempre con Salesforce Help.
 
 ## Fuentes sin acceso
-Partner Learning Camp requiere inicio de sesión de partner; el contenido de «RAG Advance» y «RAG Hands-On» debe contrastarse con esos cursos.
+Partner Learning Camp requiere inicio de sesión de partner. El módulo 7 incorpora la guía del curso «RAG Advance: RAG Best Practice»; el contenido de «RAG Hands-On» sigue pendiente de contrastar con ese curso.
 
 Basado en el PDF interno «Data 360 Enablement». Joan Mata © 2026.

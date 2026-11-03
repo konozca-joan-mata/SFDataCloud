@@ -410,4 +410,5 @@ ul.lab{list-style:none;margin-left:0}ul.lab li{margin:8px 0}ul.lab input{margin-
 .analogy{border-left:5px solid #14b8a6;background:#f0fdfa;padding:12px 16px;border-radius:8px;margin:12px 0}
 .case{border-left:5px solid #8b5cf6;background:#f5f3ff;padding:12px 16px;border-radius:8px;margin:12px 0}
 .tag{display:inline-block;font-size:.65rem;font-weight:800;padding:1px 6px;border-radius:6px;margin-left:4px;vertical-align:middle;letter-spacing:.5px}
-.tag.h{background:#dbeafe;color:#1e40af}.tag.t{background:#dcfce7;color:#166534}.tag.g{background:#fae8ff;color:#86198f}.tag.d{background:#e0e7ff;color:#3730a3}.tag.e{background:#fef3c7;color:#92400e}.tag.w{background:#fee2e2;color:#991b1b}
+.tag.h{background:#dbeafe;color:#1e40af}.tag.t{background:#dcfce7;color:#166534}.tag.g{background:#fae8ff;color:#86198f}.tag.d{background:#e0e7ff;color:#3730a3}.tag.e{background:#fef3c7;color:#92400e}.tag.p{background:#ccfbf1;color:#115e59}
+.tag.w{background:#fee2e2;color:#991b1b}

@@ -32,7 +32,7 @@ Formación completa de **Salesforce Data Cloud / Data 360** para perfiles Consul
 | 13 | Bibliografía y fuentes | referencia |
 
 ## Fiabilidad
-Cada dato indica su fuente: Help, Trailhead, Glosario, Developer docs o guía del examen. Lo no verificado va marcado como «⚠ verificar». Los límites y nombres cambian con cada release: contrasta siempre con Salesforce Help.
+Cada dato indica su fuente: Help, Trailhead, Glosario, Developer docs o guía del examen. Los límites y nombres cambian con cada release: contrasta siempre con Salesforce Help.
 
 ## Fuentes sin acceso
 Partner Learning Camp requiere inicio de sesión de partner. El módulo 7 incorpora la guía del curso «RAG Advance: RAG Best Practice»; las guías de «RAG Hands-On» están resumidas en el laboratorio 7B. Quedan sin ver los vídeos de los cursos.

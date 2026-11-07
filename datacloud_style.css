@@ -416,6 +416,10 @@ ul.lab{list-style:none;margin-left:0}ul.lab li{margin:8px 0}ul.lab input{margin-
 details.collapsible{background:none;border:0;padding:0;margin:0}
 details.collapsible>summary.section-title{cursor:pointer;list-style:none;margin-bottom:0;display:flex;align-items:center;justify-content:space-between;gap:12px}
 details.collapsible>summary.section-title::-webkit-details-marker{display:none}
+details.collapsible>summary.section-title::before{content:"";flex:none;width:.55em;height:.55em;border-right:3px solid #64748b;border-bottom:3px solid #64748b;transform:rotate(-45deg);transition:transform .2s;margin:0 4px 0 2px}
+details.collapsible[open]>summary.section-title::before{transform:rotate(45deg)}
+details.collapsible>summary.section-title{justify-content:flex-start}
+details.collapsible>summary.section-title::after{margin-left:auto}
 details.collapsible>summary.section-title::after{content:"− minimizar";font-size:.7rem;font-weight:600;color:#64748b;border:1px solid #cbd5e1;border-radius:999px;padding:3px 10px;white-space:nowrap}
 details.collapsible:not([open])>summary.section-title::after{content:"+ expandir"}
 details.collapsible[open]>summary.section-title{margin-bottom:16px}

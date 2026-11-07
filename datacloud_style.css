@@ -412,3 +412,10 @@ ul.lab{list-style:none;margin-left:0}ul.lab li{margin:8px 0}ul.lab input{margin-
 .tag{display:inline-block;font-size:.65rem;font-weight:800;padding:1px 6px;border-radius:6px;margin-left:4px;vertical-align:middle;letter-spacing:.5px}
 .tag.h{background:#dbeafe;color:#1e40af}.tag.t{background:#dcfce7;color:#166534}.tag.g{background:#fae8ff;color:#86198f}.tag.d{background:#e0e7ff;color:#3730a3}.tag.e{background:#fef3c7;color:#92400e}.tag.p{background:#ccfbf1;color:#115e59}
 .tag.w{background:#fee2e2;color:#991b1b}
+
+details.collapsible{background:none;border:0;padding:0;margin:0}
+details.collapsible>summary.section-title{cursor:pointer;list-style:none;margin-bottom:0;display:flex;align-items:center;justify-content:space-between;gap:12px}
+details.collapsible>summary.section-title::-webkit-details-marker{display:none}
+details.collapsible>summary.section-title::after{content:"− minimizar";font-size:.7rem;font-weight:600;color:#64748b;border:1px solid #cbd5e1;border-radius:999px;padding:3px 10px;white-space:nowrap}
+details.collapsible:not([open])>summary.section-title::after{content:"+ expandir"}
+details.collapsible[open]>summary.section-title{margin-bottom:16px}

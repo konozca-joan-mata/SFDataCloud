@@ -9,6 +9,7 @@ Formación completa de **Salesforce Data Cloud / Data 360** para perfiles Consul
 - **Repaso:** *Modo repaso* (botón en cada página) oculta explicaciones y laboratorios.
 - Cada módulo: *para entender* → referencia oficial → errores típicos → laboratorio → repaso exprés → preguntas.
 - `datasets/` contiene los CSV de práctica.
+- `data/questions.js` y `data/cards.js` son el banco de preguntas y las tarjetas (bilingües); para ampliarlos basta añadir una línea. El progreso se guarda en el navegador (localStorage), con exportar/importar.
 
 ## Estructura
 
@@ -30,6 +31,8 @@ Formación completa de **Salesforce Data Cloud / Data 360** para perfiles Consul
 | 11 | Glosario | referencia |
 | 12 | 55 preguntas de práctica (originales) | autoevaluación |
 | 13 | Bibliografía y fuentes | referencia |
+| 14 | Tarjetas de estudio (repetición espaciada, ES/EN) | estudio activo |
+| 15 | Simulador de examen (10 preguntas al azar, ES/EN) | estudio activo |
 
 ## Fiabilidad
 Cada dato indica su fuente: Help, Trailhead, Glosario, Developer docs o guía del examen. Los límites y nombres cambian con cada release: contrasta siempre con Salesforce Help.
